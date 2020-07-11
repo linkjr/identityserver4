@@ -22,10 +22,11 @@
 
 授权
 
-* ClientCredentials方式，通过访问授权服务的`/connect/token`即可拿到`access_token`
+* ClientCredentials，通过访问授权服务的`/connect/token`即可拿到`access_token`
 
-* AuthorizationCode方式，搭载Web项目进入授权服务登录后，可通过`HttpContext.GetTokenAsync("access_token")`拿到`access_token`
+* AuthorizationCode，搭载Web项目进入授权服务登录后，可通过`HttpContext.GetTokenAsync("access_token")`拿到`access_token`
 
+> *ClientCredentials模式适用于第三方应用，而不是用户。AuthorizationCode可以拿到用户信息*
 
 ### Client：请求客户端
 

@@ -75,7 +75,7 @@ namespace Identity.Client
             Console.WriteLine("\n\n");
 
             // call Identity Resource API
-            RequestApiResource(tokenResponse.AccessToken);
+            apiRequest(tokenResponse.AccessToken);
         }
 
         /// <summary>
